@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title >Student Registration Form Using Table in HTML</title>
+    <style>
+        body{
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+            font-family: Arial,sans-serif;
+        }
+        form{
+            border: 2px dashed black;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+        }
+        input[type=text],input[type=email],textarea{
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            text-align: center;
+            color: blue;
+        }
+        .buttons{
+            text-align: center;
+            padding-top: 20px;
+        }
+    placeholder{
+        box-sizing: border-box;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <label> First Name</label>
+        <input type="text" placeholder="First Name" value="Ghanedra" />
+        <br><br>
+        <label> Last Name</label>
+        <input type="text" placeholder="Last Name" value="Yadav"/>
+        <br><br>
+        <label> Email ID</label>
+        
+        <input type="text" placeholder="Email ID" value="shadgvh@gmail.com"/>
+        <br><br>
+        <label>Mobile Number</label>
+        <input type="0-9{3},0-9{7}" placeholder="Mobile Number" value="7842xxxxxx"/>
+        <br><br>
+        <label> Gender</label>
+        <input type="radio" placeholder="Gender"/>Male
+        <input type="radio" placeholder="Gender"/>Female
+        <br><br>
+        <label> Date of Birth(DOB)</label>
+        <input type="date" placeholder="DOB"/>
+        <br><br>
+
+        <label> Address</label>
+        <input type="textarea" placeholder="Address"  />
+        
+        <br><br>
+        <label> City</label>
+        <input type="text" placeholder="First Name" value="Ambala"/>(max 50 Allowed)
+        <br><br>
+        <label> Pin Code</label>
+        <input type="text" placeholder="Pin Code" value="567009"/>(max 6 Number Allowed)
+        <br><br>
+        <label> State</label>
+        <input type="" placeholder="State" value="Haryana"/>
+        <br><br>
+        <label>Country</label>
+        <input type="text" placeholder="Country" value="India"/> 
+        <br><br>
+        <label> Hobbies</label>
+        <br>
+        <input type="checkbox" />Drawing
+         <input type="checkbox" />Singing
+          <input type="checkbox" />Dancing
+           <input type="checkbox"/>Skeching
+            <input />(max 50 Allowed)
+<br><br>
+            <label> Qualification</label>
+         <input type="checkbox" placeholder="Qualification" />High School(10th)
+         <br>
+          <input type="checkbox" placeholder="Qualification" />higher School(12th)
+          <br>
+ <input type="checkbox" placeholder="Qualification" />Graduation
+ <br>
+  <input type="checkbox" placeholder="Qualification" />Post Graduation(Bechelors)
+  <br>
+   <input type="checkbox" placeholder="Qualification" />Phd  
+   <br><br>       
+ <label> Courses Applied For</label>
+        <input type="checkbox" placeholder="Courses Applied"/>BCA
+        <br>
+        <input type="checkbox" placeholder="Courses Applied"/>B.Com
+        <br>
+        <input type="checkbox" placeholder="Courses Applied"/>BA
+        <br>
+        <input type="checkbox" placeholder="Courses Applied"/>MCA
+        <br>
+        <input type="checkbox" placeholder="Courses Applied"/>MA
+        <br><br>
+        <input type="submit" placeholder="submit"/>
+        <input type="reset" placeholder="reset"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Section Webpage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* AppBar Styles */
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    #home {
+      background-color: #f1f1f1;
+    }
+
+    #about {
+      background-color: #e0f7fa;
+    }
+
+    #contact {
+      background-color: #ffe0b2;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    /* Spacer to avoid content hiding under navbar */
+    .spacer {
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation AppBar -->
+  <div class="navbar">
+    <div><strong>My Website</strong></div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <!-- Section 1: Home -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Development & Design</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      background-color: #f2f2f2;
+    }
+
+    .content {
+      display: flex;
+      background-color: white;
+      max-width: 1000px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .left {
+      flex: 1;
+      padding: 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .left h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .left p {
+      background-color: #fcd700;
+      padding: 15px;
+      font-size: 14px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .left .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 1px solid #333;
+      background: none;
+      color: #000;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .left .btn:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .right {
+      flex: 1;
+      position: relative;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right::before {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: #fcd700;
+      border-radius: 50%;
+      top: -50px;
+      right: -50px;
+      z-index: 0;
+    }
+
+    .right img {
+      width: 80%;
+      z-index: 2;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .right::before {
+        top: 10px;
+        right: 10px;
+      }
+
+      .right img {
+        width: 60%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section">
+    <div class="content">
+
+      <!-- Left Side Content -->
+      <div class="left">
+        <h1>Web Development<br>& Design</h1>
+        <p>
+          Quickly incentivize impactful partnerships before vertical collaboration and idea-sharing.
+          Monotonically engage market-driven methods. Appropriately empower mission-critical core services.
+        </p>
+        <a href="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" class="btn">About us</a>
+      </div>
+      <!-- Right Side Image -->
+      <div class="right">
+        <!-- Using the uploaded image -->
+        <img src="" alt="Web Designer Image">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+  <!-- Section 2: About -->
+ <!-- Contact Section -->
+<section id="About" style="background-color: #fff; padding: 100px 20px;">
+  <h1 style="text-align: center; margin-bottom: 10px;">About</h1>
+  <p style="text-align: center; color: #555;">
+    We align modern visuals & shared purpose and strategy using clean principles that businesses
+    grow and scale online.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; align-items: center;">
+
+    <!-- Left Side Image -->
+    <div style="flex: 1; min-width: 250px; text-align: center;">
+      <!-- Replacing the image src here -->
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" alt="Contact Team Image" style="width: 100%; max-width: 300px; border-radius: 10px;">
+    </div>
+
+    <!-- Right Side Info Cards -->
+    <div style="flex: 1.5; min-width: 300px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+      
+      <!-- Card 1: Contact Us -->
+      <div style="background-color: #222; color: #fff; padding: 20px; border-radius: 10px;">
+        <h3>CONTACT US</h3>
+        <p>Connect with us for support, help, or to ask anything.</p>
+        <div style="margin-top: 10px;">🔗 Facebook | Twitter | LinkedIn</div>
+      </div>
+
+      <!-- Card 2: Address -->
+      <div style="background-color: #222; color: #fff; padding: 20px; border-radius: 10px;">
+        <h3>ADDRESS</h3>
+        <p>123 Park Street, NY, America</p>
+        <p>New York, USA</p>
+      </div>
+
+      <!-- Card 3: Email -->
+      <div style="background-color: #222; color: #fff; padding: 20px; border-radius: 10px;">
+        <h3>EMAIL</h3>
+        <p>support@example.com</p>
+        <p>hello@example.com</p>
+      </div>
+
+      <!-- Card 4: Call Us -->
+      <div style="background-color: #222; color: #fff; padding: 20px; border-radius: 10px;">
+        <h3>CALL US</h3>
+        <p>‪‪+91 99999 99999‬‬</p>
+        <p>+1 (555) 123-4567</p>
+      </div>
+    </div>
+  </div>
+  <p style="text-align: center; font-size: 12px; color: #888; margin-top: 30px;">Image from Freepik</p>
+</section>
+  <!-- Section 3: Contact -->
+  <!-- Contact Section -->
+<section id="contact" style="background-color: #fff; padding: 100px 20px;">
+  <h1 style="text-align: center; margin-bottom: 10px;">CONTACT US</h1>
+  <p style="text-align: center; color: #555;">
+    We align modern visuals & shared purpose and strategy using clean principles that businesses
+    grow and scale online.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; align-items: center;">
+
+    <!-- Left Side Image -->
+    <div style="flex: 1; min-width: 250px; text-align: center;">
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" alt="Contact Girl" style="width: 100%; max-width: 300px; border-radius: 10px;">
+    </div>
+
+    <!-- Right Side Info Cards -->
+    <div style="flex: 1.5; min-width: 300px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+      
+      <!-- Card 1: Contact Us -->
+      <div style="background-color: #222; color: #fff; padding: 20px; border-radius: 10px;">
+        <h3>CONTACT US</h3>
+        <p>Connect with us for support, help, or to ask anything.</p>
+        <div style="margin-top: 10px;">🔗 Facebook | Twitter | LinkedIn</div>
+      </div>
+
+      <!-- Card 2: Address -->
+      <div style="background-color: #222; color: #fff; padding: 20px; border-radius: 10px;">
+        <h3>ADDRESS</h3>
+        <p>123 Park Street, NY, America</p>
+        <p>New York, USA</p>
+      </div>
+
+      <!-- Card 3: Email -->
+      <div style="background-color: #222; color: #fff; padding: 20px; border-radius: 10px;">
+        <h3>EMAIL</h3>
+        <p>support@example.com</p>
+        <p>hello@example.com</p>
+      </div>
+      <!-- Card 4: Call Us -->
+      <div style="background-color: #222; color: #fff; padding: 20px; border-radius: 10px;">
+        <h3>CALL US</h3>
+        <p>‪+91 99999 99999‬</p>
+        <p>+1 (555) 123-4567</p>
+      </div>
+    </div>
+  </div>
+  <p style="text-align: center; font-size: 12px; color: #888; margin-top: 30px;">Image from Freepik</p>
+</section>
+</body>
+</html>

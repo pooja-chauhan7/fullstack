@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+    th {
+      font-size: 24px;
+      padding: 10px;
+      text-align: center;
+    }
+    td {
+      border: 1px solid black;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <!-- Header -->
+    <tr>
+      <th colspan="4">HTML Table</th>
+    </tr>
+
+    <!-- Row 1 -->
+    <tr>
+      <td colspan="2">Cell 1</td>
+      <td>Cell 2</td>
+      <td>Cell 3</td>
+    </tr>
+
+    <!-- Row 2 -->
+    <tr>
+      <td rowspan="3">Cell 4</td>
+      <td>Cell 5</td>
+      <td>Cell 6</td>
+      <td>Cell 7</td>
+    </tr>
+
+    <!-- Row 3 -->
+    <tr>
+      <td colspan="3">Cell 8</td>
+    </tr>
+
+    <!-- Row 4 -->
+    <tr>
+      <td>Cell 9</td>
+      <td colspan="2">Cell 10</td>
+    </tr>
+  </table>
+
+</body>
+</html>
